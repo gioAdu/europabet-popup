@@ -1,0 +1,24 @@
+<div class="container">
+  <header>
+    <p style="margin-left: 20px">ადგილი</p>
+    <div>
+      <img
+        class="header-img"
+        src="../../../assets/images/final-item-ticket-icon.png"
+        alt="voucher"
+      />
+      <p>ვაუჩერი</p>
+    </div>
+    <p class="th3">პრიზი</p>
+  </header>
+  <div class="wrapper">
+    <div class="leaderboard" *ngFor="let item of prizesArr">
+      <p class="leaderboard-place">{{ item.place }}</p>
+      <div class="voucher-value">{{ item.voucher }}</div>
+      <div class="prizes">
+        <img *ngIf="item.prize.img" [src]="item.prize.img" alt="" />
+        <p>{{ item.prize.text }}</p>
+      </div>
+    </div>
+  </div>
+</div>

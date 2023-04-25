@@ -1,0 +1,29 @@
+img {
+  width: 233px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 272px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.slider-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  transition: 0s ease-in;
+}
+
+img {
+  user-select: none;
+	pointer-events: auto;
+	-webkit-user-drag: none;
+}

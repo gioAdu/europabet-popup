@@ -1,0 +1,110 @@
+<div class="final-stage-container">
+  <header class="header">
+    <img
+      style="max-width: 100%"
+      src="../../assets/images/final-info-img.jpg"
+      alt=""
+    />
+    <h1>ᲒᲐᲔᲛᲒᲖᲐᲕᲠᲔ THE FESTIVAL IN MALTA-ᲖᲔ!</h1>
+    <p>
+      The Festival სერიების ფარგლებში, ევროპაბეთი უკვე მეორედ აძლევს პოკერის
+      მოთამაშეებს დაუვიწყარი მოგზაურობის შანსს.
+    </p>
+    <div class="header-subheader">
+      <div class="left-border"></div>
+      <h1>15-დან 21 მაისის ჩათვლით მალტა პოკერის ფესტივალს უმასპინძლებს</h1>
+    </div>
+    <app-prize-categories></app-prize-categories>
+  </header>
+  <section class="final-tourney-wrapper">
+    <div class="main-header">
+      <div class="header-top-border"></div>
+      <h1>ᲛᲝᲘᲒᲔ ᲡᲐᲒᲖᲣᲠᲘ 30 ᲐᲞᲠᲘᲚᲘᲡ ᲤᲘᲜᲐᲚᲣᲠ ᲢᲣᲠᲜᲘᲠᲔᲑᲖᲔ</h1>
+    </div>
+    <div class="prizes-wrapper">
+      <div class="tourney-prizes">
+        <div class="left-side">
+          <div class="prize-info" *ngFor="let item of tournamentsArr">
+            <div>
+              <h1>{{ item.header }}</h1>
+              <p>{{ item.ticket }}</p>
+            </div>
+            <div>
+              <img [src]="item.img" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="prize-info-right">
+            <div class="prize-text">
+              <h1>„The Festival in Malta, GTD“</h1>
+              <p>A კატეგორიის 1 საგზური</p>
+              <p>B კატეგორიის 1 საგზური</p>
+              <p>
+                ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾
+                ბაი-ინის გადახდით.
+              </p>
+            </div>
+            <div>
+              <img
+                src="../../assets/images/poker-item-2-ticket-icon.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="prize-info-right">
+            <div class="prize-text">
+              <h1>„The Lord of the Rings“</h1>
+              <p>C კატეგორიის 1 საგზური</p>
+              <p>
+                ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾
+                ბაი-ინის გადახდით.
+              </p>
+            </div>
+            <div>
+              <img
+                src="../../assets/images/poker-item-2-ticket-icon.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prizes-footer">
+        <p>
+          * თუ მოთამაშე მოიგებს ბეჭედს ორჯერ ან მეტჯერ, ის The Lord of the Rings
+          ტურნირზემოხვდება ბეჭდების შესაბამისი რაოდენობის სტეკით
+        </p>
+        <p>
+          *ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾-იანი
+          ბაი-ინის გადახდით.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="special-prizes">
+    <div class="main-header">
+      <div class="header-top-border"></div>
+      <h1 class="special-header">მისტიური გასაღები</h1>
+    </div>
+    <div class="special-prizes-container">
+      <h2 class="special-subheader">
+        მოთამაშეები გარკვეული საპრიზო ადგილების დაკავების შემთხვევაში მიიღებენ
+        საიდუმლო გასაღებს
+      </h2>
+      <div class="special-wrapper">
+        <div class="leaderboard" *ngFor="let item of prizesArr; let i = index">
+          <p class="leaderboard-place">{{ i }}</p>
+          <div class="voucher-value">{{ item.prize }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="margin-top: 55px">
+    <app-terms-conditions></app-terms-conditions>
+  </section>
+  <section style="margin-top: 54px">
+    <h1 style="margin-bottom: 32px; font-size: 18px">მსგავსი აქციები</h1>
+    <app-slider></app-slider>
+  </section>
+</div>

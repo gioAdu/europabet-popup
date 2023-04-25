@@ -1,0 +1,263 @@
+p,
+h1 {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c3234;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f05a22;
+  border-radius: 2px;
+}
+
+.header {
+  padding: 24px;
+  background-color: #171718;
+  border: 4px solid #25292b;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.header img {
+  border-radius: 16px;
+}
+
+.header h1 {
+  margin: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.header p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.header-subheader {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #2c3234;
+  padding: 25px 0;
+  height: 60px;
+  position: relative;
+  width: 70%;
+  margin: 15px auto;
+
+  border-radius: 10px;
+}
+
+.left-border {
+  width: 4px;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 10px #ef5a21;
+  background-color: #ef5a21;
+}
+
+.categories-wrapper {
+  display: flex;
+}
+
+.header-top-border {
+  width: 30%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transform: translate(-50%, 0);
+  background-color: #ef5a21;
+  box-shadow: 0px 0px 10px #ef5a21;
+}
+
+.final-tourney-wrapper {
+  margin-top: 20px;
+}
+
+.main-header {
+  font-size: 18px;
+  position: relative;
+  background-color: #2c3234;
+  line-height: 70px;
+  margin: 0;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.prizes-wrapper {
+  background-color: #171718;
+  padding: 20px;
+  border: 4px solid #25292b;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.tourney-prizes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-side {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.tourney-prizes h1 {
+  font-size: 16px;
+}
+
+.tourney-prizes p {
+  font-size: 14px;
+}
+
+.prize-info {
+  flex: 1;
+  display: flex;
+  position: relative;
+  gap: 70px;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #1e2122;
+  border-radius: 12px;
+  justify-content: space-between;
+}
+
+.tourney-prizes img {
+  position: absolute;
+  top: 0;
+  right: 14px;
+}
+
+.right-side {
+  display: flex;
+  gap: 21px;
+  flex-direction: column;
+}
+
+.prize-info-right {
+  display: flex;
+  position: relative;
+  width: 395px;
+  background-color: #1e2122;
+  border-radius: 12px;
+  padding: 28px;
+  justify-content: space-between;
+}
+
+.prize-text {
+  max-width: 100%;
+}
+
+.prize-text p {
+  margin: 15px 0;
+}
+
+.prizes-footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 25px;
+  opacity: 0.8;
+}
+
+.special-prizes {
+  margin-top: 24px;
+}
+
+.special-header {
+  font-size: 35px;
+  word-spacing: 10px;
+  color: rgb(204, 148, 6);
+}
+
+.special-subheader {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.special-wrapper {
+  display: flex;
+  margin-top: 20px;
+  overflow: auto;
+  background-color: #25292b;
+  padding: 22px;
+  height: 400px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.leaderboard {
+  height: 56px;
+  width: 100%;
+  border: 2pt solid #2c3234;
+  border-radius: 76px;
+  display: flex;
+  gap: 23px;
+  padding: 14px 30px;
+  align-items: center;
+  background-color: #1e2122;
+}
+
+.leaderboard-place {
+  padding: 6px 11px;
+  border-radius: 50%;
+  background-color: #2c3234;
+}
+
+.special-prizes-container {
+  background-color: #171718;
+  border: 4px solid #25292b;
+  border-top: none;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 24px;
+}
+
+@media screen and (max-width: 818px) {
+  .prizes-wrapper{
+    background-color: #25292B;
+  }
+
+  .tourney-prizes{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .prize-info-right{
+    width: 100%;
+  }
+
+  .prizes-footer{
+    background-color: #25292B;
+    
+  }
+
+  .special-prizes-container{
+    background-color: #25292B;
+  }
+
+  .special-subheader{
+    display: none;
+  }
+
+  .special-wrapper{
+    margin-top: 0;
+    padding-top: 0;
+  }
+}

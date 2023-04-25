@@ -1,0 +1,25 @@
+h1,
+p,
+h2 {
+  margin: 0;
+}
+
+.terms-main-header {
+  margin-bottom: 32px;
+}
+
+.terms-info-container {
+	padding: 21px 26px;
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: space-between;
+  background-color: #25292B;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.terms-info-container h2 {
+  font-size: 15px;
+}
+
+

@@ -1,0 +1,15 @@
+<div
+  class="slider"
+  #slider
+  (mousedown)="mouseDown($event)"
+  (mouseenter)="mouseEnter()"
+  (mouseup)="mouseUp()"
+	(window:mouseup) ='winMouseUp()'
+	(mousemove)="mouseMove($event)"
+>
+  <div class="slider-inner" #innerSlider>
+    <div *ngFor="let pic of imgsArr" class="slide-img">
+      <img [src]="pic" alt="" />
+    </div>
+  </div>
+</div>

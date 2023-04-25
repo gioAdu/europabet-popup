@@ -1,0 +1,77 @@
+h1,
+p {
+  margin: 0;
+}
+
+.cash-games-container {
+  text-align: center;
+  padding: 0 24px 24px 24px;
+  border-left: 4px solid #25292b;
+  border-right: 4px solid #25292b;
+  border-bottom: 4px solid #25292b;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.main-header {
+  font-size: 18px;
+  position: relative;
+  background-color: #2c3234;
+  line-height: 70px;
+  margin: 0;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cash-games-header {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.icon-legend {
+  margin-top: 24px;
+}
+
+.header-top-border {
+  width: 30%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transform: translate(-50%, 0);
+  background-color: #ef5a21;
+  box-shadow: 0px 0px 10px #ef5a21;
+}
+
+.cash-games-header-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cash-games-header-container img {
+  align-self: center;
+}
+
+.legend-footer {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.legend-footer a {
+  color: #ef5a21;
+}
+
+
+.terms-conditions{
+  margin-top: 55px;
+}
+
+.promotions h1{
+  margin-top: 52px;
+  margin-bottom: 32px;
+}

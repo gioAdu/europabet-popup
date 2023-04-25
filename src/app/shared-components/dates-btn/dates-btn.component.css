@@ -1,0 +1,58 @@
+p {
+  margin: 0;
+}
+.games-dates-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 77px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.games-dates-btn:hover:not(.active) {
+  background-color: #ef5a21;
+  transform: scale(1.12);
+  border-radius: 12px;
+}
+
+.games-dates-btn:hover .date {
+  opacity: 1;
+  font-size: 14px;
+}
+
+.games-dates-btn:hover .stage {
+  opacity: 1;
+  font-size: 18px;
+}
+
+.active {
+  background-color: #ef5a21;
+  transform: scale(1.12);
+  border-radius: 12px;
+  opacity: 1;
+}
+
+.date,
+.stage {
+  opacity: 0.8;
+}
+
+.date {
+  font-size: 10px;
+}
+
+.stage {
+  font-size: 14px;
+}
+
+.active .date {
+  opacity: 1;
+  font-size: 14px;
+}
+
+.active .stage {
+  opacity: 1;
+  font-size: 18px;
+}

@@ -1,0 +1,9 @@
+<div class="legend-container">
+  <div *ngFor="let item of iconLegendArr" class="legend-info">
+    <div class="legend-left-border"></div>
+    <img [src]="item.icon" alt="" />
+    <p>
+      {{ item.text }}
+    </p>
+  </div>
+</div>

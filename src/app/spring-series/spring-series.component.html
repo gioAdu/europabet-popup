@@ -1,0 +1,99 @@
+<header class="main-header">
+  <div class="header-top-border"></div>
+  <h1>ტურნირები და სატელიტები</h1>
+</header>
+<div class="series-info">
+  <div class="main-content">
+    <div class="top-banner-wrapper" style="display: flex">
+      <img src="../../assets/images/promo-left-img.png" alt="" />
+      <div class="main-content-wrapper">
+        <h2>სერიის ფარგლებში, ყოველდღიურად გაიმართება 3 ივენთი:</h2>
+        <div class="times">
+          <div class="times-img">
+            <img src="../../assets/images/clock-regular.svg" alt="" />
+          </div>
+          <p>19:00 / 19:30 / 20:00</p>
+        </div>
+        <div class="bg-text">
+          <p>* ყველა ტურნირზე მოხვედრა შესაძლებელია 0 ლარიდან</p>
+          <p style="margin: 15px 0">
+            ტურნირების სრული განრიგის სანახავად გადადი პოკერის ლობიში
+          </p>
+          <button class="lobby-btn">პოკერის ლობი</button>
+        </div>
+      </div>
+      <img src="../../assets/images/promo-right-img.png" alt="" />
+    </div>
+    <div class="sm-text">
+      <p>* ყველა ტურნირზე მოხვედრა შესაძლებელია 0 ლარიდან</p>
+      <p style="margin: 15px 0">
+        ტურნირების სრული განრიგის სანახავად გადადი პოკერის ლობიში
+      </p>
+      <button class="lobby-btn">პოკერის ლობი</button>
+    </div>
+  </div>
+  <div class="leaderboard">
+    <header class="main-header">
+      <div class="header-top-border"></div>
+      <h1>ᲛᲝᲮᲕᲓᲘ TOP20 ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲨᲘ ᲢᲣᲠᲜᲘᲠᲔᲑᲖᲔ ᲓᲐᲒᲠᲝᲕᲔᲑᲣᲚᲘ ᲥᲣᲚᲔᲑᲘᲗ</h1>
+    </header>
+    <div class="leaderboard-body">
+      <div role="button" class="points-btn">
+        <p>ქულების დაგროვების მექანიკა</p>
+        <img src="../../assets/images/mechanic-icon.png" alt="" />
+      </div>
+      <div class="leaderboard-comp">
+        <app-leaderboard></app-leaderboard>
+      </div>
+      <div class="icon-legend-container">
+        <app-icon-legend></app-icon-legend>
+        <div class="extra-notes">
+          <p>
+            * ლიდერბორდის შედეგები განახლდება <a href="#"> პოკერის ლობიში</a>
+          </p>
+          <p style="margin: 12px 0">
+            * სატურნირო ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები და
+            სატელიტები
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="daily-tournaments">
+    <h1>ᲧᲝᲕᲔᲚᲓᲦᲘᲣᲠᲘ ᲢᲣᲠᲜᲘᲠᲔᲑᲘ ᲓᲐ ᲡᲐᲢᲔᲚᲘᲢᲔᲑᲘ</h1>
+    <div class="banner-wrapper">
+      <div *ngFor="let tour of tournamentsArr" class="banner">
+        <div class="column">
+          <h1>{{ tour.tourName }}</h1>
+          <p class="cash-prize">{{ tour.prize }}</p>
+        </div>
+        <div class="column">
+          <h1>{{ tour.place }}</h1>
+          <p class="tournament-date">{{ tour.date }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="main-event">
+      <div class="main-banner">
+        <div class="column">
+          <h1>Main Events</h1>
+          <p class="cash-prize">150 000₾</p>
+        </div>
+        <div class="column">
+          <h1>ბაი-ინი - 550₾</h1>
+          <p class="main-tournament-date">29 აპრილი</p>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center; opacity: 0.8">
+      * სამივე ტურნირის გამარჯვებულები მიიღებენ ბეჭდებს და ფინალურ ეტაპზე, The
+      Lord of the Rings ტურნირზე, იბრძოლებენ The Festival in Malta-ს საგზურის
+      მისაღებად.
+    </p>
+  </div>
+  <app-additional-info></app-additional-info>
+  <div style="margin: 40px 0">
+    <app-terms-conditions></app-terms-conditions>
+  </div>
+  <app-slider></app-slider>
+</div>

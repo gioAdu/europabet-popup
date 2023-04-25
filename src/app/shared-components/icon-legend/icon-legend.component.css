@@ -1,0 +1,48 @@
+p {
+  margin: 0;
+}
+
+.legend-container {
+  padding: 20px 24px;
+  background-color: #25292b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.legend-info {
+  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #202324;
+  gap: 21px;
+  padding: 27px 22px;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.legend-info img {
+  align-self: center;
+}
+
+.legend-info p {
+  text-align: start;
+  font-size: 15px;
+  max-width: 530px;
+}
+
+.legend-left-border {
+  width: 4px;
+  height: 46px;
+  position: absolute;
+  left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 10px #ef5a21;
+  background-color: #ef5a21;
+}
+
+@media screen and (max-width:740px) {
+  p{
+    font-size: 10px;
+  }
+}

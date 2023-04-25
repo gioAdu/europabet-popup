@@ -1,0 +1,276 @@
+h1,
+p {
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+}
+.main-header {
+  font-size: 18px;
+  position: relative;
+  background-color: #2c3234;
+  padding: 35px;
+  margin: 0;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header-top-border {
+  width: 30%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transform: translate(-50%, 0);
+  background-color: #ef5a21;
+  box-shadow: 0px 0px 10px #ef5a21;
+}
+
+.main-content-wrapper h2{
+  font-size: 20px;
+}
+
+.times{
+  display: flex;
+  gap: 8px;
+  border: 2px solid #EF5A21;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #EF5A21;
+  margin-bottom: 15px;
+}
+
+.times-img{
+  display: flex;
+  justify-content: center;
+  background-color: #EF5A21;
+  width: 40px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+
+}
+
+.times-img img{
+  width: 16px;
+}
+
+.times p {
+  opacity: 1!important;
+  padding: 5px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #171718;
+  border-left: 4px solid #25292b;
+  border-right: 4px solid #25292b;
+  border-bottom: 4px solid #25292b;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-content-wrapper p {
+  opacity: 0.8;
+}
+
+.sm-text {
+  display: none;
+}
+
+.top-banner-wrapper > img {
+  min-width: 22%;
+  align-self: center;
+  
+}
+
+.leaderboard-comp{
+  align-self:stretch;
+}
+
+.lobby-btn {
+  border: none;
+  background-color: #f05a22;
+  border-radius: 5px;
+  color: white;
+  padding: 6px 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.leaderboard {
+  margin-top: 27px;
+}
+
+.leaderboard-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #171718;
+  border: 4px solid #25292b;
+  border-top: none;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  align-items: center;
+  padding: 24px;
+  justify-content: center;
+}
+
+.points-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 7px;
+  background-color: #1e2122;
+  align-items: center;
+  padding-left: 17px;
+  border: 2px solid #2c3234;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.extra-notes {
+  margin-top: 15px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+a {
+  color: #ef5a21;
+}
+
+.daily-tournaments {
+  background-color: #171718;
+  border: 4px solid #25292b;
+  padding: 26px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.daily-tournaments  h1{
+  text-align: center;
+}
+
+
+.icon-legend-container{
+  margin-top: 24px;
+  width: 100%;
+}
+
+.banner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  gap: 16px;
+}
+
+.banner {
+  background-image: url(../../assets/images/tournament-bg.png);
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: 100%;
+  justify-content: center;
+  flex: 1 0 auto;
+  padding: 25px;
+  gap: 39px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column h1 {
+  font-size: 15px;
+}
+
+.cash-prize {
+  color: #ffbe00;
+  font-size: 24px;
+  margin-top: 11px;
+}
+
+.tournament-date {
+  padding: 4px 23px;
+  background-color: #b78648;
+  border-radius: 15px 15px 0 15px;
+  margin-top: 12px;
+}
+
+.main-event {
+  margin-top: 15px;
+  padding: 26px;
+  width: 100%;
+  background-image: url(../../assets/images/main-bg.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.main-banner {
+  display: flex;
+  justify-content: center;
+  gap: 62px;
+}
+
+.main-tournament-date {
+  padding: 4px 23px;
+  background-color: #d7c860;
+  border-radius: 15px 15px 0 15px;
+  margin-top: 12px;
+}
+
+
+
+
+@media screen and (max-width: 740px) {
+
+  .main-content-wrapper{
+    justify-content:unset;
+  }
+
+  .top-banner-wrapper{
+    border-bottom-right-radius: 10px;
+  }
+  .sm-text {
+    display: block;
+    text-align: center;
+    background-color: #2c3234;
+    padding-top: 15px;
+  }
+  
+  .bg-text {
+    display: none;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-content h2 {
+    font-size: 16px;
+  }
+
+  .main-header h1{
+    font-size: 16px;
+    line-height: normal;
+    padding: 25px;
+  }
+ 
+}
